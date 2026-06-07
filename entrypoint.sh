@@ -1,9 +1,10 @@
-#!/usr/bin/env sh
+#!/bin/bash
 
-echo "Service Starting..."
+cd /webssh
 
-nohup /usr/sbin/php-fpm8.1 --nodaemonize --fpm-config /etc/php/8.1/fpm/php-fpm.conf >/dev/null 2>&1 &
-
-echo "PHP-FPM Started."
-
-exec nginx -g "daemon off;"
+exec python3 、/webssh/app.py \
+    --xsrf=False \
+    --xheaders=False \
+    --origin='*' \
+    --debug \
+    --delay=10
