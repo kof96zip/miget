@@ -2,7 +2,7 @@
 
 cd /webssh
 
-exec python3 、/webssh/app.py \
+exec python3 app.py \
     --xsrf=False \
     --xheaders=False \
     --origin='*' \
