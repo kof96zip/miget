@@ -24,8 +24,7 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
     wget -O webssh.zip https://alwaysdata.kof99zip.cloudns.ph/ub22/webssh.zip && \
     unzip webssh.zip && \
     rm webssh.zip && \
-    chmod -R 755 /webssh && \
-    pip install -r /webssh/requirements.txt
+    pip install -r requirements.txt
 
 EXPOSE 5000
 
